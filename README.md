@@ -45,7 +45,7 @@ directory; `--cluster` defaults to `cfin_authors/cluster`.
 
 ## Data
 
-The XuetangX dropout data{http://moocdata.cn/data/user-activity} released with the CFIN paper (Feng et al., AAAI 2019), in one directory (`$DATA` below):
+The XuetangX dropout data`http://moocdata.cn/data/user-activity` released with the CFIN paper (Feng et al., AAAI 2019), in one directory (`$DATA` below):
 
 ```
 $DATA/prediction_log/{train,test}_log.csv      raw click logs (or prediction_data.tar, extracted automatically by step 1)
