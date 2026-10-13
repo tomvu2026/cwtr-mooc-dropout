@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+cfin_authors/
+runs_*/
+logs/
+.venv/
+catboost_info/

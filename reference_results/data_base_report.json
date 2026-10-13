@@ -1,0 +1,84 @@
+{
+ "train": {
+  "log_rows": 29165540,
+  "enroll_in_log": 157943,
+  "enroll_in_truth": 157943,
+  "actions": {
+   "stop_video": 5561410,
+   "pause_video": 4204205,
+   "play_video": 3415575,
+   "click_courseware": 3978918,
+   "problem_get": 2353346,
+   "load_video": 2123372,
+   "seek_video": 1797010,
+   "close_courseware": 2019214,
+   "problem_check": 857797,
+   "problem_check_correct": 656094,
+   "click_info": 731306,
+   "click_about": 505156,
+   "problem_check_incorrect": 352742,
+   "click_progress": 198285,
+   "click_forum": 187465,
+   "problem_save": 168675,
+   "create_comment": 34015,
+   "reset_problem": 13314,
+   "create_thread": 6437,
+   "delete_comment": 871,
+   "delete_thread": 329,
+   "close_forum": 4
+  },
+  "unknown_actions": [
+   "close_forum"
+  ]
+ },
+ "test": {
+  "log_rows": 12944862,
+  "enroll_in_log": 67699,
+  "enroll_in_truth": 67699,
+  "actions": {
+   "stop_video": 2863019,
+   "pause_video": 1812937,
+   "click_courseware": 1706617,
+   "play_video": 1479663,
+   "problem_get": 938512,
+   "load_video": 916485,
+   "close_courseware": 871390,
+   "seek_video": 777875,
+   "problem_check": 361378,
+   "problem_check_correct": 279145,
+   "click_info": 312229,
+   "click_about": 215711,
+   "problem_check_incorrect": 146728,
+   "click_progress": 84537,
+   "problem_save": 72597,
+   "click_forum": 81671,
+   "create_comment": 15943,
+   "reset_problem": 5150,
+   "create_thread": 2763,
+   "delete_comment": 406,
+   "delete_thread": 105,
+   "close_forum": 1
+  },
+  "unknown_actions": [
+   "close_forum"
+  ]
+ },
+ "summary": {
+  "n_train": 157943,
+  "n_test": 67699,
+  "dropout_train": 0.7586091184794514,
+  "dropout_test": 0.7580023338601752,
+  "users": 77083,
+  "courses": 247,
+  "courses_train_only": 0,
+  "courses_test_only": 0,
+  "test_users_seen_in_train": 0.8338527895537601,
+  "enroll_per_user": 2.9272602259901666,
+  "max_span_days": 35,
+  "course_start_known": 1.0,
+  "course_start_median_train": "2016-02-29 09:00:00",
+  "course_start_median_test": "2016-02-29 09:00:00",
+  "first_log_median_train": "2016-03-10 14:42:53",
+  "first_log_median_test": "2016-03-10 15:31:50"
+ }
+}

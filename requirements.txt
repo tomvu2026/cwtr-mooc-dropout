@@ -1,0 +1,10 @@
+# Versions used for the reported results are in the README ("Environment"). Any recent versions should work.
+numpy
+pandas
+scipy
+scikit-learn
+torch
+lightgbm
+xgboost
+catboost
+tabulate
