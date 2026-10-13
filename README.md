@@ -1,7 +1,7 @@
 # CWTR: source code for dropout prediction on XuetangX
 
 This repository contains the code behind all experiments of the manuscript: the data pipeline, the CWTR
-(course-aligned temporal representation) features, CFIN / CFIN-T, the baselines, and one script per experiment (E1–E9).
+(course-aligned temporal representation) features, CFIN, the baselines, and one script per experiment (E1–E9).
 It is meant to let a reviewer (a) check that the pipeline does what the manuscript says and (b) re-run any experiment.
 
 The data are **not** included (see [Data](#data)). Per-seed results of our own runs are in [`reference_results/`](reference_results).
@@ -30,7 +30,7 @@ setup_env.sh  requirements.txt
 ## Environment
 
 Results were produced with Python 3.12.3, numpy 2.5.1, pandas 3.0.5, scipy 1.18.0, scikit-learn 1.9.1, torch 2.14.0 (CUDA 13),
-lightgbm 4.7.0, xgboost 3.4.1, catboost 1.2.10, on 10 CPU cores, 29 GB RAM and one 8 GB NVIDIA RTX A5000.
+lightgbm 4.7.0, xgboost 3.4.1, catboost 1.2.10, on 10 CPU cores, 32 GB RAM and one 24 GB NVIDIA RTX A5000.
 Any recent versions should work. A GPU is optional: the neural models (E2, E3, E4) run on CPU, but slowly.
 
 ```
@@ -45,7 +45,7 @@ directory; `--cluster` defaults to `cfin_authors/cluster`.
 
 ## Data
 
-The XuetangX dropout data released with the CFIN paper (Feng et al., AAAI 2019), in one directory (`$DATA` below):
+The XuetangX dropout data{http://moocdata.cn/data/user-activity} released with the CFIN paper (Feng et al., AAAI 2019), in one directory (`$DATA` below):
 
 ```
 $DATA/prediction_log/{train,test}_log.csv      raw click logs (or prediction_data.tar, extracted automatically by step 1)
