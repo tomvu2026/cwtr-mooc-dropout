@@ -4,7 +4,7 @@ This repository contains the code behind all experiments of the manuscript: the 
 (course-aligned temporal representation) features, CFIN, the baselines, and one script per experiment (E1–E9).
 It is meant to let a reviewer (a) check that the pipeline does what the manuscript says and (b) re-run any experiment.
 
-The data are **not** included (see [Data](#data)). Per-seed results of our own runs are in [`reference_results/`](reference_results).
+The data are **not** included (see [Data](http://moocdata.cn/data/user-activity)). Per-seed results of our own runs are in [`reference_results/`](reference_results).
 
 ## Contents
 
@@ -45,7 +45,7 @@ directory; `--cluster` defaults to `cfin_authors/cluster`.
 
 ## Data
 
-The XuetangX dropout data`http://moocdata.cn/data/user-activity` released with the CFIN paper (Feng et al., AAAI 2019), in one directory (`$DATA` below):
+The XuetangX dropout data released with the CFIN paper (Feng et al., AAAI 2019), in one directory (`$DATA` below):
 
 ```
 $DATA/prediction_log/{train,test}_log.csv      raw click logs (or prediction_data.tar, extracted automatically by step 1)
